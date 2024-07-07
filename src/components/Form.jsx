@@ -1,5 +1,6 @@
 import "../assets/css/form.css"
 import { Form, Button } from 'react-bootstrap';
+import formComponent from "../components/formComponent";
 const form = () => {
   return (
     <div>
