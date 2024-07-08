@@ -3,6 +3,7 @@ import  Banner from "../components/Banner";
 import Tutorial from '../components/Tutorial';
 import Courses from '../components/courses';
 import Form from "../components/Form";
+import Testimonials from "../components/Testimonials"
 function Home() {
   return (
     <div>
@@ -10,6 +11,7 @@ function Home() {
       <Tutorial/>
       <Courses/>
       <Form/>
+      <Testimonials/>
     </div>
   )
 }

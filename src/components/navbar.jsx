@@ -21,10 +21,10 @@ function AppNavbar() {
             <LinkContainer to="/" exact>
               <Nav.Link className="nav-link-custom">Home</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/features">
+            <LinkContainer to="/Tutorials">
               <Nav.Link className="nav-link-custom">Tutorials</Nav.Link>
             </LinkContainer>
-            <LinkContainer to="/pricing">
+            <LinkContainer to="/Testimonials">
               <Nav.Link className="nav-link-custom">Testimonials</Nav.Link>
             </LinkContainer>
             <Nav.Link href="#" disabled className="nav-link-custom">Blog</Nav.Link>

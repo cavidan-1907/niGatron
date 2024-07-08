@@ -1,76 +1,61 @@
+import React from 'react'
 import "../assets/css/form.css"
-import { Link } from "react-router-dom";
-import { Form, Button } from 'react-bootstrap';
-import FormComponent from "../components/formComponent";
-import { RiExpandDiagonal2Fill } from "react-icons/ri";
-import { DiReact } from "react-icons/di";
-const form = () => {
+import "../assets/css/reset.css"
+import RightComponent from '../components/RightComponent';
+import FormComponent from "../components/FormComponent";
+import { DiJavascript, DiReact } from 'react-icons/di';
+function Form() {
   return (
     <div>
 <div className="section4">
-    <div className="section41 container">
-<div className="top">
-<Form.Control
-                            type="text"
-                            placeholder="Search Subjects"
-                            name="name"
-                            required
-                        />
+  <div className="section41 container">
+<div className="search"><input id="search" type="search" placeholder='Search Subject' />
+<button id='view'>Search</button>
 </div>
-<div className="bottom">
-<div className="left"> <FormComponent
-                        bg="https://preview.colorlib.com/theme/tutor/images/img_1.jpg"                        
-                        lText="Learning React Native"
-                        pText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!"
-                        sText=" 1hr 24m Advanced Jun 18, 2020 "
-                        icon2={DiReact}
-                        /> 
-                        <FormComponent
-                        bg="https://preview.colorlib.com/theme/tutor/images/img_1.jpg"                        
-                        lText="Learning React Native"
-                        pText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!"
-                        sText=" 1hr 24m Advanced Jun 18, 2020 "
-                        icon1={RiExpandDiagonal2Fill}
-                        /> 
-                        <FormComponent
-                        bg="https://preview.colorlib.com/theme/tutor/images/img_1.jpg"                        
-                        lText="Learning React Native"
-                        pText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!"
-                        sText=" 1hr 24m Advanced Jun 18, 2020 "
-                        /> 
-                        </div>
-<div className="right"> <div className="top">
-              <div className="img">
-                <img src="https://preview.colorlib.com/theme/tutor/images/img_2.jpg" alt="" />
-              </div>
-              <div className="text">
-                <Link to="#">Tutorial</Link>
-                <h4>Learning React Native</h4>
-              </div>
-            </div> <div className="top">
-              <div className="img">
-                <img src="https://preview.colorlib.com/theme/tutor/images/img_2.jpg" alt="" />
-              </div>
-              <div className="text">
-                <Link to="#">Tutorial</Link>
-                <h4>Learning React Native</h4>
-              </div>
-            </div> <div className="top">
-              <div className="img">
-                <img src="https://preview.colorlib.com/theme/tutor/images/img_2.jpg" alt="" />
-              </div>
-              <div className="text">
-                <Link to="#">Tutorial</Link>
-                <h4>Learning React Native</h4>
-              </div>
-            </div></div>
-</div>
+<div className="latest">
+  <div className="topL">    <span>Latest</span>
+  <h2  className="link">Tutorials</h2></div>
+  <div className="botL">
+    <div className="leftL">
 
+    <FormComponent
+              bg="https://preview.colorlib.com/theme/tutor/images/img_1.jpg"
+              lText="Learning React Native"
+              pText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!"
+              sText=" 1hr 24m Advanced Jun 18, 2020 "
+              icon1={<DiReact />}
+              icon2={<DiJavascript />}
+            />
+               <FormComponent
+              bg="https://preview.colorlib.com/theme/tutor/images/img_1.jpg"
+              lText="Learning React Native"
+              pText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!"
+              sText=" 1hr 24m Advanced Jun 18, 2020 "
+              icon1={<DiReact />}
+              icon2={<DiJavascript />}
+            />
+               <FormComponent
+              bg="https://preview.colorlib.com/theme/tutor/images/img_1.jpg"
+              lText="Learning React Native"
+              pText="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam tempore, saepe numquam. Doloremque culpa tenetur facere quisquam, animi illum possimus!"
+              sText=" 1hr 24m Advanced Jun 18, 2020 "
+              icon1={<DiReact />}
+              icon2={<DiJavascript />}
+            />
     </div>
-
+    <div className="rightL">
+    <RightComponent imgSrc="https://preview.colorlib.com/theme/tutor/images/img_2.jpg" title="Learning React Native" />
+    <RightComponent imgSrc="https://preview.colorlib.com/theme/tutor/images/img_2.jpg" title="Learning React Native" />
+    <RightComponent imgSrc="https://preview.colorlib.com/theme/tutor/images/img_2.jpg" title="Learning React Native" />
+    </div>
+  </div>
 </div>
+
+  </div>
+</div>
+
     </div>
   )
 }
 
-export default form
+export default Form
