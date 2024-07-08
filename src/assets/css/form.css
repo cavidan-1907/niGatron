@@ -13,11 +13,14 @@
 }
 .search{
     display: flex;
+
     gap: 20px;
+    flex-wrap: wrap;
 }
 #search{
     padding:10px;
     outline: none;
+    width: 80%;
     border-radius: 13px;
     background-color:#efefef ;
 }
