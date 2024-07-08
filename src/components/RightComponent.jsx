@@ -4,7 +4,7 @@ function RightComponent({ imgSrc, title }) {
     <div className="top1">
       <div className="img1">
         <img src={imgSrc} alt="" />
-      </div>
+      </div> 
       <div className="text1">
         <h4>{title}</h4>
       </div>
