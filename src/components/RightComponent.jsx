@@ -9,7 +9,6 @@ function RightComponent({ imgSrc, title }) {
         <img src={imgSrc} alt="" />
       </div>
       <div className="text1">
-        <Link to="#">Tutorial</Link>
         <h4>{title}</h4>
       </div>
     </div>
