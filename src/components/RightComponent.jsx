@@ -1,7 +1,4 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
 import "../assets/css/form.css";
-
 function RightComponent({ imgSrc, title }) {
   return (
     <div className="top1">
