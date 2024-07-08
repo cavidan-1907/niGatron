@@ -8,7 +8,7 @@ function RightComponent({ imgSrc, title }) {
       <div className="text1">
         <h4>{title}</h4>
       </div>
-    </div>
+    </div> 
   );
 }
 
